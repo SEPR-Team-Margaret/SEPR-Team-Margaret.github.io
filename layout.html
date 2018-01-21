@@ -6,8 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Compiled and minified materialize CSS -->
+<link rel="stylesheet" href="css/materialize.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!-- Google Material Design Icons -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 <!--Favicon-->
 <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
@@ -15,93 +20,68 @@
 <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
 <link rel="manifest" href="static/manifest.json">
 <link rel="mask-icon" href="static/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/tatic/favicon.ico">
+<link rel="shortcut icon" href="static/favicon.ico">
 <meta name="msapplication-config" content="static/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
 
-<style>
-.paper-shadow{
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
-}
-body{
-    background-color: #fafbfc;
-}
-
-.content-title {
-	text-align: left !important;
-}
-
-.text-content {
-	text-align: justify;
-}
-
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-a {
-    color: black;
-}
-
-
-a:hover {
-    color: grey;
-}
-</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-  <!--<a class="navbar-brand" href="/">LDG</a>-->
-  <img src="static/logo.svg" class="img-responsive mx-auto" style="width:64px; height:64px">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	<div style="padding-right:15px"></div>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about.html">About Us</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Assessments
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/assessment1.html">Assessment 1</a>
-		  <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/assessment2.html">Assessment 2</a>
-		  <div class="dropdown-divider"></div>
-		  <a class="dropdown-item" href="/assessment3.html">Assessment 3</a>
-		  <div class="dropdown-divider"></div>
-		  <a class="dropdown-item" href="/assessment4.html">Assessment 4</a>
-        </div>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="https://github.com/SEPR-Team-Margaret/UniversityDomination">GitHub Repo</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="https://docs.google.com/a/york.ac.uk/spreadsheets/d/11NNjvenq0gTta2dcQxxmluznd9xA3Oe9EsYfJGzJJSA/edit?usp=sharing">Schedule</a>
-	  </li>
-    </ul>
-	<!--
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-	-->
-  </div>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+	<li><a href="asm1.html">Assessment 1</a></li>
+	<li><a href="asm2.html">Assessment 2</a></li>
+	<li><a href="asm3.html">Assessment 3</a></li>
+	<li><a href="asm4.html">Assessment 4</a></li>
+</ul>
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+		<a href="#" class="brand-logo left"><img class="brand-logo hide-on-med-and-down" src="static/logo.svg"></a>
+		<a href="#" data-activates="slide-out" class="button-collapse"><i class=" large material-icons">menu</i></a>
+		<ul id="nav-mobile" class="left hide-on-med-and-down">
+			<li style="padding-left:96px;"><a href="index.html" class="active white-text">Home</a></li>
+			<li><a class="grey-text" href="about.html">About Us</a></li>
+			<li><a class="dropdown-button grey-text" data-beloworigin="true" href="#!" data-activates="dropdown1">Assessments<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="grey-text" href="https://github.com/SEPR-Team-Margaret/UniversityDomination">Source Code</a></li>
+			<li><a class="grey-text" href="https://docs.google.com/a/york.ac.uk/spreadsheets/d/11NNjvenq0gTta2dcQxxmluznd9xA3Oe9EsYfJGzJJSA/edit?usp=sharing">Schedule</a></li>
+		</ul>
+	</div>
 </nav>
 
-<div class="container-fluid" style="padding-top:80px;">
-
+<div>
+	<ul id="slide-out" class="side-nav">
+		<li><div class="user-view">
+			<div class="background">
+				<img src="https://d1yn1kh78jj1rr.cloudfront.net/image/thumbnail/rDtN98Qoishumwih/vector-geometric-pattern-with-geometric-shapes_fyIHrTcO_thumb.jpg">
+			</div>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			
+		</div></li>
+		<li><a class="waves-effect" href="index.html">Home</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href="about.html">About Us</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href="asm1.html">Assessment 1</a></li>
+		<li><a class="waves-effect" href="asm2.html">Assessment 2</a></li>
+		<li><a class="waves-effect" href="asm3.html">Assessment 3</a></li>
+		<li><a class="waves-effect" href="asm4.html">Assessment 4</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href="https://github.com/SEPR-Team-Margaret/UniversityDomination">Source Code</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="waves-effect" href="https://docs.google.com/a/york.ac.uk/spreadsheets/d/11NNjvenq0gTta2dcQxxmluznd9xA3Oe9EsYfJGzJJSA/edit?usp=sharing">Schedule</a></li>
+	</ul>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<div class="container">
+    <!-- Page Content goes here -->
+	
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!-- Other JS -->
+<script src="js/custom.js"></script>
 </body>
 </html>
