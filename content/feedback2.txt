@@ -1,0 +1,40 @@
+Website (3/3): 
+Great website, easy to navigate, easy to find all the information we needed. 
+
+Architecture (14/22): 
+The language and tool used to design the architecture are stated as required. The class diagram provided is consistent with the UML class diagram notation. There is some redundant information in the architecture (e.g. PlayerUI has a numberOfSectors attribute which can also be computed from ->Player->Sector). Setters and getters could have been omitted to draw attention to more important methods in the classes. There is no such thing as a "Hierarchy diagram" in the UML standard.
+
+The classes and methods of the system are discussed at an appropriate level of detail. The architecture should focus on the core components and functionality of the system (it should not be a 1-1 mapping of the implementation reverse engineered into a class diagram). Implementation-level methods such as OnMouseUpAsButton, ApplyHighlight* as well as the methods and attributes highlighted with yellow etc. could have been omitted.
+
+Any requirements not satisfied by the architecture in its present form (e.g. F4, F7) should have been briefly discussed.
+
+Implementation (14/20): 
+Source code: some good (useful, insightful) comments in the code, though quality is not always consistent. For example, the commenting around the more complex methods in Player.cs is useful and captures some of the intent behind the logic, this is not replicated throughout the rest of the scripts (consider the commenting in Sector.cs for example). However, the commenting that is in place is useful!
+
+The code itself is well structured, for the most part. Some of the scripts are effectively just static data structures or placeholders, while the real functionality is in Game.cs, Player.cs and Sector.cs. Game.cs is a rather substantial script which is challenging to test/debug - can it be refactored?
+
+The code is generally very easy to read and makes good use of appropriate programming patterns.
+
+The report is very useful, particularly the discussion on the need for a fully testable game. The consideration of risks in unit allocation is well observed.
+
+GUI (2/5): 
+Good use of visuals/screen shots/icons.
+
+Focus is on the look/visual display. There is little consideration of interaction issues.
+
+It is not clear how the design principles (e.g., clarity) are implemented in the design, nor what the process was for GUI design (e.g., iterative and incremental?)
+
+Testing (15/20): 
+Approach: clear overview of the operational approach taken to testing, especially on how Unity was used to enable the testing process. What was less clear was the actual overall testing process: how was planning carried out, what resource was allocated to testing, who did the testing (and when?) and how were faults identified and resolved, e.g., by the tester or the original developer? This is important particularly as you move in to assessments 3 and 4 as you will need to do different types of testing (at different times) and may need to plan when and how you do testing very differently.
+
+Actual tests are thorough; the separation into back-end and front-end testing is very helpful, as is the separate of the results of GUI testing. There is a good summary in the test report, and the testing evidence on the website is thorough and clearly presented.
+
+Updates on Assessment 1 (16/20): 
+Requirements have been updated in an online document that is linked from the report and the updates are sensible and well justified.
+
+An updated plan is provided on the website and linked from the report. The report summarises and justifies the changes as requested.
+
+Citation [2] in https://sepr-team-margaret.github.io/content/Plan1U2.pdf is misformatted.
+
+Risks have been colour-coded and ownership has been added to the updated risk register however the rationale behind allocation of ownership is not discussed. Also, there's no discussion on revising the risks (e.g. having worked on the product and with selected third party libraries for some time now, wouldn't it make sense to drop the likelihood of PD2 to "low"?)
+
