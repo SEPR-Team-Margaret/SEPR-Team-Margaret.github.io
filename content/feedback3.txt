@@ -1,0 +1,25 @@
+Implementation Report and Code (45/55): 
+The implementation of save/load meets the requirements - it is a little heavyweight (mostly in the sense of the labour involved in using Binary Formatters and building the functionality) but that's not a hugely significant issue; it would be good to see that the report commented on why this approach was reasonable.
+
+The PVC minigame is well implemented and the new code is integrated with the existing code in a sensible way. 
+
+Commenting in the new code is actually quite good - it's generally thoroughly embedded throughout the new code, is not limited to just headers of interfaces, and comments on the intention behind the code.
+
+The report is very clearly written and the traceability to requirements is done extremely well. The linking of features/requirements not implemented is embedded well in the text in a logical and consistent way.
+
+However, much of the report focuses on explaining what was done, rather than discussing challenges, alternatives, and explanations of why. One can infer some of the justification from reading the text, and in some cases there is some limited justification (e.g., a particular requirement would be too complex or expensive to implement) but it would be much better for this information to be made consistently explicit.
+
+Change Report (26/30): 
+Change management: The report should have provided a more systematic approach to change management across the inherited deliverables e.g. allocation of documents to team members for review -> recording of proposed changes -> discussion -> allocation of changes to team members -> implementation of changes etc. 
+
+GUI report: Relatively minor changes to the GUI, including the removal of UI elements that are not functional at this stage.
+
+Testing report: Manual testing is cumbersome, error-prone and does not scale. More effort should have been invested in automating some of the tests.
+
+Methods and plans: No major changes to methods and plans due to similar development platform and approach.
+
+Risk assessment: Re-assigned requirements to members of the new team. The process of reviewing individual risks before accepting them and carrying them forward should have been discussed in more detail.
+
+Website (4/5): 
+Functional and well-designed website. The home-page should have been updated as it still mentions handover meetings.
+
