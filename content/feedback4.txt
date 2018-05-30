@@ -1,0 +1,25 @@
+Implementation and Report (11/15): 
+The report is concise and precise, though it emphasises *design* more than implementation challenges (though the discussion on changes to the GUI are very useful). . The discussion on introducing postgraduate gang members is clear and good use is of sensible design principles - particularly reuse of existing code.
+
+The overview of punishment cards is quite clear as well (again, with more focus on design than implementation). However, there is some useful discussion on changes to the code that handles the selection of units. 
+
+What is missing from both descriptions is a justification of why these decisions were made; there is some traceability to requirements, but little justification of the decisions (e.g., why an integer mapping for types of units was appropriate, why moving around or adding new UI elements was important, etc).
+
+The new code is well structured and it appears that some effort has been put in to ensuring that it is reasonably consistent in style to the existing code. There is also some very helpful commenting in the new code - good effort has clearly been put into this.
+
+Final Architecture and Traceability Report (11/15): 
+The architecture UML class diagram is too detailed (i.e. it contains a lot of implementation detail such as setters, getters, attributes such as MinigameManager.winText/loseText). Also, it contains redundant attributes and references (e.g. Player.units is redundant as there's already an association between Player and Unit). The new features of the game are discussed in sufficient detail and a traceability report is provided. A colour-coded architecture diagram that visualises the main changes to the architecture over the different phases of the project would have been useful.
+
+Evaluation and Testing Report (14/20): 
+The discussion on evaluation is helpful but rather high level. The use of tracing to requirements is appropriate, but this could go into much more detail - why was this chosen for this particular assessment, how was it set up, how was it evidenced, what questions were asked, etc. Basically, how was it done - and how was it possible to demonstrate "good quality"?
+
+The discussion on testing is similarly helpful, but a bit more detailed than the evaluation section. Specific techniques (such as unit testing) were mentioned but not in much detail; I was expecting to read about regression and integration testing (or hear an explanation as to why they weren't relevant). A brief overview of tools used and the overall testing process that was followed by the team would also be useful.
+
+The discussion on achieving the requirements is well structured and helpful. There is some very minor design pollution but this is a trivial issue not worth dwelling on in more detail.
+
+Project Review Report (15/20): 
+Detailed account of the evolution of the structure and the organisation of the team, and justification of the relevant decisions taken throughout the project. The "development methods and tools" section discusses methods and infrastructure (version control, communication systems) but not software development tools (e.g. IDE, modelling tools, unit testing framework).
+
+Presentation (18/20): 
+The demo reel was fun, showing a good sense of humour. Slides were very good, balancing text and visuals well. There was little text and lots of pictures, which is the best way to do it. Emphasising key features (like the distinctive approach to punishment cards) was a helpful approach. Generally, the focus on features that players should care about was welcome. More consideration of marketing or marketability aspects would have helped. From a technical perspective, the presentation went well - it was scripted carefully, the transition from demo to slides was smooth, and the transition between speakers was well rehearsed. It would have been good if everyone had spoken.
+
